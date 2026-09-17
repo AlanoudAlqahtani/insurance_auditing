@@ -1,0 +1,1144 @@
+{
+  "hospital_id": "H5",
+  "contract_number": "INS-H5-2024-0731",
+  "provider": "Pelham Health Network",
+  "effective_from": "1 January 2024",
+  "effective_to": "31 December 2025",
+  "effective_from_iso": "2024-01-01",
+  "effective_to_iso": "2025-12-31",
+  "currency": "GBP",
+  "rounding_convention": "half_up_cent",
+  "services": {
+    "Advanced Cardiac Ventilation Support": {
+      "unit_basis": "per hour",
+      "rate_cents": 3375,
+      "daily_cap": 24
+    },
+    "Advanced Dermatologic Pharmaceutical Dispensing": {
+      "unit_basis": "per item supplied",
+      "rate_cents": 8175,
+      "daily_cap": 4
+    },
+    "Ambulatory Hepatic Case Conference": {
+      "unit_basis": "per hour",
+      "rate_cents": 19775,
+      "daily_cap": null
+    },
+    "Ambulatory Metabolic Imaging Interpretation": {
+      "unit_basis": "per test",
+      "rate_cents": 3900,
+      "daily_cap": null
+    },
+    "Ambulatory Oncology Imaging Interpretation": {
+      "unit_basis": "per test",
+      "rate_cents": 6675,
+      "daily_cap": null
+    },
+    "Ambulatory Paediatric Isolation Room Occupancy": {
+      "unit_basis": "per day of service",
+      "rate_cents": 126525,
+      "daily_cap": null
+    },
+    "Assisted Cardiac Ventilation Support": {
+      "unit_basis": "per day of service",
+      "rate_cents": 156675,
+      "daily_cap": null
+    },
+    "Assisted Hepatic Physiotherapy Session": {
+      "unit_basis": "per visit",
+      "rate_cents": 19025,
+      "daily_cap": 12
+    },
+    "Assisted Immunologic Sterilisation Service": {
+      "unit_basis": "per item supplied",
+      "rate_cents": 24500,
+      "daily_cap": null
+    },
+    "Assisted Metabolic Endoscopic Procedure": {
+      "unit_basis": "per procedure",
+      "rate_cents": 110150,
+      "daily_cap": null
+    },
+    "Assisted Renal Imaging Interpretation": {
+      "unit_basis": "per procedure",
+      "rate_cents": 161650,
+      "daily_cap": null
+    },
+    "Bedside Oncology Transfusion Service": {
+      "unit_basis": "per unit dispensed",
+      "rate_cents": 3025,
+      "daily_cap": null
+    },
+    "Bedside Paediatric Consultation": {
+      "unit_basis": "per procedure",
+      "rate_cents": 421875,
+      "daily_cap": null
+    },
+    "Comprehensive Gastrointestinal Endoscopic Procedure": {
+      "unit_basis": "per procedure",
+      "rate_cents": 141500,
+      "daily_cap": null
+    },
+    "Comprehensive Geriatric Wound Care": {
+      "unit_basis": "per visit",
+      "rate_cents": 11725,
+      "daily_cap": null
+    },
+    "Comprehensive Metabolic Ventilation Support": {
+      "unit_basis": "per day of service",
+      "rate_cents": 47650,
+      "daily_cap": null
+    },
+    "Comprehensive Oncology Transfusion Service": {
+      "unit_basis": "per procedure",
+      "rate_cents": 414475,
+      "daily_cap": 8
+    },
+    "Comprehensive Ophthalmic Isolation Room Occupancy": {
+      "unit_basis": "per night of occupancy",
+      "rate_cents": 105950,
+      "daily_cap": null
+    },
+    "Comprehensive Palliative Consultation": {
+      "unit_basis": "per visit",
+      "rate_cents": 35050,
+      "daily_cap": null
+    },
+    "Continuous Immunologic Laboratory Panel": {
+      "unit_basis": "per item supplied",
+      "rate_cents": 7025,
+      "daily_cap": null
+    },
+    "Continuous Metabolic Endoscopic Procedure": {
+      "unit_basis": "per procedure",
+      "rate_cents": 550750,
+      "daily_cap": null
+    },
+    "Continuous Otolaryngologic Transport Service": {
+      "unit_basis": "per item supplied",
+      "rate_cents": 14675,
+      "daily_cap": null
+    },
+    "Continuous Pulmonary Case Conference": {
+      "unit_basis": "per hour",
+      "rate_cents": 4300,
+      "daily_cap": null
+    },
+    "Elective Metabolic Pharmaceutical Dispensing": {
+      "unit_basis": "per item supplied",
+      "rate_cents": 28450,
+      "daily_cap": null
+    },
+    "Elective Ophthalmic Nutritional Support": {
+      "unit_basis": "per day of service",
+      "rate_cents": 94300,
+      "daily_cap": null
+    },
+    "Elective Ophthalmic Recovery Room Occupancy": {
+      "unit_basis": "per night of occupancy",
+      "rate_cents": 195975,
+      "daily_cap": null
+    },
+    "Elective Pulmonary Radiotherapy Fraction": {
+      "unit_basis": "per procedure",
+      "rate_cents": 353625,
+      "daily_cap": null
+    },
+    "Elective Vascular Diagnostic Imaging": {
+      "unit_basis": "per procedure",
+      "rate_cents": 284175,
+      "daily_cap": null
+    },
+    "Emergency Gastrointestinal Endoscopic Procedure": {
+      "unit_basis": "per procedure",
+      "rate_cents": 707500,
+      "daily_cap": null
+    },
+    "Emergency Metabolic Discharge Planning": {
+      "unit_basis": "per visit",
+      "rate_cents": 20575,
+      "daily_cap": null
+    },
+    "Emergency Neurological Biopsy Procedure": {
+      "unit_basis": "per procedure",
+      "rate_cents": 440750,
+      "daily_cap": null
+    },
+    "Emergency Oncology Imaging Interpretation": {
+      "unit_basis": "per procedure",
+      "rate_cents": 441250,
+      "daily_cap": 4
+    },
+    "Emergency Pulmonary Radiotherapy Fraction": {
+      "unit_basis": "per item supplied",
+      "rate_cents": 5850,
+      "daily_cap": null
+    },
+    "Emergency Urologic Home Visit": {
+      "unit_basis": "per visit",
+      "rate_cents": 17325,
+      "daily_cap": null
+    },
+    "Extended Dermatologic Transport Service": {
+      "unit_basis": "per visit",
+      "rate_cents": 14475,
+      "daily_cap": 4
+    },
+    "Extended Endocrine Theatre Time": {
+      "unit_basis": "per hour",
+      "rate_cents": 15700,
+      "daily_cap": null
+    },
+    "Extended Neurological Consultation": {
+      "unit_basis": "per visit",
+      "rate_cents": 17100,
+      "daily_cap": null
+    },
+    "Extended Ophthalmic Transport Service": {
+      "unit_basis": "per item supplied",
+      "rate_cents": 27750,
+      "daily_cap": null
+    },
+    "Extended Psychiatric Endoscopic Procedure": {
+      "unit_basis": "per procedure",
+      "rate_cents": 145200,
+      "daily_cap": null
+    },
+    "Extended Urologic Infusion Therapy": {
+      "unit_basis": "per hour",
+      "rate_cents": 7400,
+      "daily_cap": null
+    },
+    "Focused Endocrine Theatre Time": {
+      "unit_basis": "per hour",
+      "rate_cents": 3925,
+      "daily_cap": null
+    },
+    "Focused Neurological Radiotherapy Fraction": {
+      "unit_basis": "per item supplied",
+      "rate_cents": 1950,
+      "daily_cap": null
+    },
+    "Focused Urologic Nutritional Support": {
+      "unit_basis": "per unit dispensed",
+      "rate_cents": 7700,
+      "daily_cap": null
+    },
+    "Inpatient Dermatologic Nursing Observation": {
+      "unit_basis": "per day of service",
+      "rate_cents": 132400,
+      "daily_cap": null
+    },
+    "Inpatient Immunologic Recovery Room Occupancy": {
+      "unit_basis": "per hour",
+      "rate_cents": 9500,
+      "daily_cap": null
+    },
+    "Inpatient Psychiatric Case Conference": {
+      "unit_basis": "per hour",
+      "rate_cents": 12175,
+      "daily_cap": null
+    },
+    "Inpatient Pulmonary Critical Care Occupancy": {
+      "unit_basis": "per night of occupancy",
+      "rate_cents": 57800,
+      "daily_cap": null
+    },
+    "Intensive Hepatic Case Conference": {
+      "unit_basis": "per visit",
+      "rate_cents": 21375,
+      "daily_cap": null
+    },
+    "Intensive Oncology Sterilisation Service": {
+      "unit_basis": "per procedure",
+      "rate_cents": 247750,
+      "daily_cap": null
+    },
+    "Intermittent Orthopaedic Discharge Planning": {
+      "unit_basis": "per visit",
+      "rate_cents": 37375,
+      "daily_cap": null
+    },
+    "Intermittent Urologic Discharge Planning": {
+      "unit_basis": "per hour",
+      "rate_cents": 12125,
+      "daily_cap": null
+    },
+    "Intermittent Vascular Telemetry Monitoring": {
+      "unit_basis": "per hour",
+      "rate_cents": 3850,
+      "daily_cap": 8
+    },
+    "Outpatient Dermatologic Home Visit": {
+      "unit_basis": "per visit",
+      "rate_cents": 19375,
+      "daily_cap": null
+    },
+    "Outpatient Haematology Laboratory Panel": {
+      "unit_basis": "per item supplied",
+      "rate_cents": 19050,
+      "daily_cap": null
+    },
+    "Outpatient Metabolic Physiotherapy Session": {
+      "unit_basis": "per hour",
+      "rate_cents": 16725,
+      "daily_cap": null
+    },
+    "Outpatient Neurological Recovery Room Occupancy": {
+      "unit_basis": "per night of occupancy",
+      "rate_cents": 111475,
+      "daily_cap": null
+    },
+    "Outpatient Psychiatric Discharge Planning": {
+      "unit_basis": "per visit",
+      "rate_cents": 19300,
+      "daily_cap": null
+    },
+    "Postoperative Musculoskeletal Imaging Interpretation": {
+      "unit_basis": "per procedure",
+      "rate_cents": 431375,
+      "daily_cap": null
+    },
+    "Preoperative Endocrine Rehabilitation Programme": {
+      "unit_basis": "per visit",
+      "rate_cents": 33725,
+      "daily_cap": null
+    },
+    "Preoperative Gastrointestinal Nutritional Support": {
+      "unit_basis": "per unit dispensed",
+      "rate_cents": 3750,
+      "daily_cap": null
+    },
+    "Preoperative Immunologic Recovery Room Occupancy": {
+      "unit_basis": "per night of occupancy",
+      "rate_cents": 142550,
+      "daily_cap": null
+    },
+    "Preoperative Musculoskeletal Nutritional Support": {
+      "unit_basis": "per unit dispensed",
+      "rate_cents": 6675,
+      "daily_cap": null
+    },
+    "Preoperative Ophthalmic Transport Service": {
+      "unit_basis": "per visit",
+      "rate_cents": 13975,
+      "daily_cap": 6
+    },
+    "Preoperative Paediatric Biopsy Procedure": {
+      "unit_basis": "per item supplied",
+      "rate_cents": 15675,
+      "daily_cap": null
+    },
+    "Routine Dermatologic Home Visit": {
+      "unit_basis": "per visit",
+      "rate_cents": 96875,
+      "daily_cap": null
+    },
+    "Routine Geriatric Telemetry Monitoring": {
+      "unit_basis": "per day of service",
+      "rate_cents": 126725,
+      "daily_cap": null
+    },
+    "Routine Infectious Infusion Therapy": {
+      "unit_basis": "per unit dispensed",
+      "rate_cents": 7150,
+      "daily_cap": 24
+    },
+    "Routine Neurological Biopsy Procedure": {
+      "unit_basis": "per item supplied",
+      "rate_cents": 18625,
+      "daily_cap": null
+    },
+    "Routine Psychiatric Physiotherapy Session": {
+      "unit_basis": "per visit",
+      "rate_cents": 30950,
+      "daily_cap": null
+    },
+    "Routine Psychiatric Telemetry Monitoring": {
+      "unit_basis": "per hour, per item",
+      "rate_cents": 2950,
+      "daily_cap": null
+    },
+    "Routine Urologic Radiotherapy Fraction": {
+      "unit_basis": "per item supplied",
+      "rate_cents": 5100,
+      "daily_cap": null
+    },
+    "Routine Urologic Transport Service": {
+      "unit_basis": "per visit",
+      "rate_cents": 15250,
+      "daily_cap": null
+    },
+    "Specialist Dermatologic Nursing Observation": {
+      "unit_basis": "per hour",
+      "rate_cents": 10450,
+      "daily_cap": null
+    },
+    "Specialist Gastrointestinal Pharmaceutical Dispensing": {
+      "unit_basis": "per unit dispensed",
+      "rate_cents": 4125,
+      "daily_cap": null
+    },
+    "Specialist Metabolic Sterilisation Service": {
+      "unit_basis": "per item supplied",
+      "rate_cents": 19825,
+      "daily_cap": null
+    },
+    "Standard Infectious Ventilation Support": {
+      "unit_basis": "per hour",
+      "rate_cents": 19225,
+      "daily_cap": null
+    },
+    "Standard Paediatric Radiotherapy Fraction": {
+      "unit_basis": "per procedure",
+      "rate_cents": 117900,
+      "daily_cap": null
+    },
+    "Standard Psychiatric Discharge Planning": {
+      "unit_basis": "per hour",
+      "rate_cents": 5200,
+      "daily_cap": null
+    },
+    "Supervised Immunologic Sterilisation Service": {
+      "unit_basis": "per procedure",
+      "rate_cents": 268575,
+      "daily_cap": null
+    },
+    "Supervised Metabolic Discharge Planning": {
+      "unit_basis": "per hour",
+      "rate_cents": 16775,
+      "daily_cap": null
+    },
+    "Supervised Otolaryngologic Specimen Analysis": {
+      "unit_basis": "per item supplied",
+      "rate_cents": 28300,
+      "daily_cap": null
+    },
+    "Supervised Palliative Consultation": {
+      "unit_basis": "per procedure",
+      "rate_cents": 441425,
+      "daily_cap": null
+    },
+    "Supervised Vascular Consultation": {
+      "unit_basis": "per procedure",
+      "rate_cents": 156100,
+      "daily_cap": null
+    },
+    "Supervised Vascular Diagnostic Imaging": {
+      "unit_basis": "per test",
+      "rate_cents": 20175,
+      "daily_cap": null
+    }
+  },
+  "threshold_premiums": {
+    "Assisted Immunologic Sterilisation Service": {
+      "threshold": 10,
+      "uplift": 0.15
+    },
+    "Comprehensive Palliative Consultation": {
+      "threshold": 8,
+      "uplift": 0.3
+    },
+    "Emergency Pulmonary Radiotherapy Fraction": {
+      "threshold": 8,
+      "uplift": 0.2
+    },
+    "Focused Urologic Nutritional Support": {
+      "threshold": 8,
+      "uplift": 0.4
+    },
+    "Outpatient Psychiatric Discharge Planning": {
+      "threshold": 10,
+      "uplift": 0.3
+    },
+    "Preoperative Musculoskeletal Nutritional Support": {
+      "threshold": 8,
+      "uplift": 0.25
+    },
+    "Routine Dermatologic Home Visit": {
+      "threshold": 12,
+      "uplift": 0.3
+    },
+    "Routine Geriatric Telemetry Monitoring": {
+      "threshold": 16,
+      "uplift": 0.15
+    },
+    "Routine Psychiatric Physiotherapy Session": {
+      "threshold": 12,
+      "uplift": 0.15
+    },
+    "Specialist Metabolic Sterilisation Service": {
+      "threshold": 12,
+      "uplift": 0.25
+    }
+  },
+  "non_business_day_uplifts": {
+    "Ambulatory Metabolic Imaging Interpretation": 0.15,
+    "Assisted Cardiac Ventilation Support": 0.2,
+    "Elective Vascular Diagnostic Imaging": 0.12,
+    "Emergency Gastrointestinal Endoscopic Procedure": 0.2,
+    "Extended Neurological Consultation": 0.25,
+    "Outpatient Haematology Laboratory Panel": 0.2,
+    "Outpatient Metabolic Physiotherapy Session": 0.1,
+    "Postoperative Musculoskeletal Imaging Interpretation": 0.2,
+    "Preoperative Immunologic Recovery Room Occupancy": 0.12
+  },
+  "volume_discounts": {
+    "Ambulatory Hepatic Case Conference": [
+      {
+        "threshold": 80,
+        "discount": 0.12
+      }
+    ],
+    "Continuous Metabolic Endoscopic Procedure": [
+      {
+        "threshold": 80,
+        "discount": 0.12
+      }
+    ],
+    "Elective Metabolic Pharmaceutical Dispensing": [
+      {
+        "threshold": 100,
+        "discount": 0.12
+      },
+      {
+        "threshold": 300,
+        "discount": 0.25
+      }
+    ],
+    "Extended Endocrine Theatre Time": [
+      {
+        "threshold": 100,
+        "discount": 0.12
+      },
+      {
+        "threshold": 300,
+        "discount": 0.3
+      }
+    ],
+    "Inpatient Dermatologic Nursing Observation": [
+      {
+        "threshold": 100,
+        "discount": 0.12
+      },
+      {
+        "threshold": 300,
+        "discount": 0.2
+      }
+    ],
+    "Intensive Oncology Sterilisation Service": [
+      {
+        "threshold": 120,
+        "discount": 0.1
+      }
+    ],
+    "Preoperative Gastrointestinal Nutritional Support": [
+      {
+        "threshold": 120,
+        "discount": 0.1
+      },
+      {
+        "threshold": 360,
+        "discount": 0.25
+      }
+    ],
+    "Supervised Immunologic Sterilisation Service": [
+      {
+        "threshold": 100,
+        "discount": 0.15
+      },
+      {
+        "threshold": 300,
+        "discount": 0.25
+      }
+    ],
+    "Supervised Otolaryngologic Specimen Analysis": [
+      {
+        "threshold": 60,
+        "discount": 0.1
+      },
+      {
+        "threshold": 180,
+        "discount": 0.2
+      }
+    ]
+  },
+  "daily_caps": {
+    "Advanced Cardiac Ventilation Support": 24,
+    "Advanced Dermatologic Pharmaceutical Dispensing": 4,
+    "Assisted Hepatic Physiotherapy Session": 12,
+    "Comprehensive Oncology Transfusion Service": 8,
+    "Emergency Oncology Imaging Interpretation": 4,
+    "Extended Dermatologic Transport Service": 4,
+    "Intermittent Vascular Telemetry Monitoring": 8,
+    "Preoperative Ophthalmic Transport Service": 6,
+    "Routine Infectious Infusion Therapy": 24
+  },
+  "bundles": [
+    {
+      "service_a": "Elective Ophthalmic Recovery Room Occupancy",
+      "service_b": "Supervised Palliative Consultation",
+      "rate_a_cents": 172450,
+      "rate_b_cents": 388450
+    },
+    {
+      "service_a": "Emergency Metabolic Discharge Planning",
+      "service_b": "Specialist Gastrointestinal Pharmaceutical Dispensing",
+      "rate_a_cents": 17500,
+      "rate_b_cents": 3500
+    },
+    {
+      "service_a": "Extended Urologic Infusion Therapy",
+      "service_b": "Standard Paediatric Radiotherapy Fraction",
+      "rate_a_cents": 5925,
+      "rate_b_cents": 94325
+    }
+  ],
+  "exclusion_windows": [
+    {
+      "service": "Comprehensive Ophthalmic Isolation Room Occupancy",
+      "window_days": 30,
+      "relative_to_service": "Ambulatory Paediatric Isolation Room Occupancy"
+    },
+    {
+      "service": "Elective Ophthalmic Nutritional Support",
+      "window_days": 30,
+      "relative_to_service": "Elective Pulmonary Radiotherapy Fraction"
+    },
+    {
+      "service": "Inpatient Immunologic Recovery Room Occupancy",
+      "window_days": 14,
+      "relative_to_service": "Ambulatory Oncology Imaging Interpretation"
+    },
+    {
+      "service": "Intermittent Orthopaedic Discharge Planning",
+      "window_days": 14,
+      "relative_to_service": "Preoperative Paediatric Biopsy Procedure"
+    },
+    {
+      "service": "Intermittent Urologic Discharge Planning",
+      "window_days": 10,
+      "relative_to_service": "Continuous Pulmonary Case Conference"
+    },
+    {
+      "service": "Preoperative Endocrine Rehabilitation Programme",
+      "window_days": 10,
+      "relative_to_service": "Ambulatory Paediatric Isolation Room Occupancy"
+    },
+    {
+      "service": "Routine Urologic Transport Service",
+      "window_days": 10,
+      "relative_to_service": "Inpatient Pulmonary Critical Care Occupancy"
+    }
+  ],
+  "facility_multipliers": {
+    "Advanced Cardiac Ventilation Support||F-MAIN": 1.0,
+    "Advanced Cardiac Ventilation Support||F-NORTH": 1.1,
+    "Advanced Cardiac Ventilation Support||F-COAST": 0.92,
+    "Advanced Dermatologic Pharmaceutical Dispensing||F-MAIN": 1.0,
+    "Advanced Dermatologic Pharmaceutical Dispensing||F-NORTH": 1.1,
+    "Advanced Dermatologic Pharmaceutical Dispensing||F-COAST": 0.95,
+    "Ambulatory Hepatic Case Conference||F-MAIN": 1.0,
+    "Ambulatory Hepatic Case Conference||F-NORTH": 1.08,
+    "Ambulatory Hepatic Case Conference||F-COAST": 0.95,
+    "Ambulatory Metabolic Imaging Interpretation||F-MAIN": 1.0,
+    "Ambulatory Metabolic Imaging Interpretation||F-NORTH": 1.1,
+    "Ambulatory Metabolic Imaging Interpretation||F-COAST": 1.05,
+    "Ambulatory Oncology Imaging Interpretation||F-MAIN": 1.0,
+    "Ambulatory Oncology Imaging Interpretation||F-NORTH": 1.2,
+    "Ambulatory Oncology Imaging Interpretation||F-COAST": 0.92,
+    "Ambulatory Paediatric Isolation Room Occupancy||F-MAIN": 1.0,
+    "Ambulatory Paediatric Isolation Room Occupancy||F-NORTH": 1.15,
+    "Ambulatory Paediatric Isolation Room Occupancy||F-COAST": 1.05,
+    "Assisted Cardiac Ventilation Support||F-MAIN": 1.0,
+    "Assisted Cardiac Ventilation Support||F-NORTH": 1.1,
+    "Assisted Cardiac Ventilation Support||F-COAST": 0.92,
+    "Assisted Hepatic Physiotherapy Session||F-MAIN": 1.0,
+    "Assisted Hepatic Physiotherapy Session||F-NORTH": 1.2,
+    "Assisted Hepatic Physiotherapy Session||F-COAST": 0.92,
+    "Assisted Immunologic Sterilisation Service||F-MAIN": 1.0,
+    "Assisted Immunologic Sterilisation Service||F-NORTH": 1.2,
+    "Assisted Immunologic Sterilisation Service||F-COAST": 0.9,
+    "Assisted Metabolic Endoscopic Procedure||F-MAIN": 1.0,
+    "Assisted Metabolic Endoscopic Procedure||F-NORTH": 1.1,
+    "Assisted Metabolic Endoscopic Procedure||F-COAST": 0.92,
+    "Assisted Renal Imaging Interpretation||F-MAIN": 1.0,
+    "Assisted Renal Imaging Interpretation||F-NORTH": 1.2,
+    "Assisted Renal Imaging Interpretation||F-COAST": 0.92,
+    "Bedside Oncology Transfusion Service||F-MAIN": 1.0,
+    "Bedside Oncology Transfusion Service||F-NORTH": 1.15,
+    "Bedside Oncology Transfusion Service||F-COAST": 0.9,
+    "Bedside Paediatric Consultation||F-MAIN": 1.0,
+    "Bedside Paediatric Consultation||F-NORTH": 1.15,
+    "Bedside Paediatric Consultation||F-COAST": 0.92,
+    "Comprehensive Gastrointestinal Endoscopic Procedure||F-MAIN": 1.0,
+    "Comprehensive Gastrointestinal Endoscopic Procedure||F-NORTH": 1.0,
+    "Comprehensive Gastrointestinal Endoscopic Procedure||F-COAST": 1.0,
+    "Comprehensive Geriatric Wound Care||F-MAIN": 1.0,
+    "Comprehensive Geriatric Wound Care||F-NORTH": 1.2,
+    "Comprehensive Geriatric Wound Care||F-COAST": 1.05,
+    "Comprehensive Metabolic Ventilation Support||F-MAIN": 1.0,
+    "Comprehensive Metabolic Ventilation Support||F-NORTH": 1.0,
+    "Comprehensive Metabolic Ventilation Support||F-COAST": 1.0,
+    "Comprehensive Oncology Transfusion Service||F-MAIN": 1.0,
+    "Comprehensive Oncology Transfusion Service||F-NORTH": 1.15,
+    "Comprehensive Oncology Transfusion Service||F-COAST": 1.05,
+    "Comprehensive Ophthalmic Isolation Room Occupancy||F-MAIN": 1.0,
+    "Comprehensive Ophthalmic Isolation Room Occupancy||F-NORTH": 1.2,
+    "Comprehensive Ophthalmic Isolation Room Occupancy||F-COAST": 0.95,
+    "Comprehensive Palliative Consultation||F-MAIN": 1.0,
+    "Comprehensive Palliative Consultation||F-NORTH": 1.08,
+    "Comprehensive Palliative Consultation||F-COAST": 0.92,
+    "Continuous Immunologic Laboratory Panel||F-MAIN": 1.0,
+    "Continuous Immunologic Laboratory Panel||F-NORTH": 1.0,
+    "Continuous Immunologic Laboratory Panel||F-COAST": 1.0,
+    "Continuous Metabolic Endoscopic Procedure||F-MAIN": 1.0,
+    "Continuous Metabolic Endoscopic Procedure||F-NORTH": 1.1,
+    "Continuous Metabolic Endoscopic Procedure||F-COAST": 1.05,
+    "Continuous Otolaryngologic Transport Service||F-MAIN": 1.0,
+    "Continuous Otolaryngologic Transport Service||F-NORTH": 1.15,
+    "Continuous Otolaryngologic Transport Service||F-COAST": 0.92,
+    "Continuous Pulmonary Case Conference||F-MAIN": 1.0,
+    "Continuous Pulmonary Case Conference||F-NORTH": 1.0,
+    "Continuous Pulmonary Case Conference||F-COAST": 1.0,
+    "Elective Metabolic Pharmaceutical Dispensing||F-MAIN": 1.0,
+    "Elective Metabolic Pharmaceutical Dispensing||F-NORTH": 1.15,
+    "Elective Metabolic Pharmaceutical Dispensing||F-COAST": 0.95,
+    "Elective Ophthalmic Nutritional Support||F-MAIN": 1.0,
+    "Elective Ophthalmic Nutritional Support||F-NORTH": 1.08,
+    "Elective Ophthalmic Nutritional Support||F-COAST": 0.95,
+    "Elective Ophthalmic Recovery Room Occupancy||F-MAIN": 1.0,
+    "Elective Ophthalmic Recovery Room Occupancy||F-NORTH": 1.08,
+    "Elective Ophthalmic Recovery Room Occupancy||F-COAST": 0.95,
+    "Elective Pulmonary Radiotherapy Fraction||F-MAIN": 1.0,
+    "Elective Pulmonary Radiotherapy Fraction||F-NORTH": 1.0,
+    "Elective Pulmonary Radiotherapy Fraction||F-COAST": 1.0,
+    "Elective Vascular Diagnostic Imaging||F-MAIN": 1.0,
+    "Elective Vascular Diagnostic Imaging||F-NORTH": 1.15,
+    "Elective Vascular Diagnostic Imaging||F-COAST": 0.9,
+    "Emergency Gastrointestinal Endoscopic Procedure||F-MAIN": 1.0,
+    "Emergency Gastrointestinal Endoscopic Procedure||F-NORTH": 1.1,
+    "Emergency Gastrointestinal Endoscopic Procedure||F-COAST": 0.92,
+    "Emergency Metabolic Discharge Planning||F-MAIN": 1.0,
+    "Emergency Metabolic Discharge Planning||F-NORTH": 1.1,
+    "Emergency Metabolic Discharge Planning||F-COAST": 0.9,
+    "Emergency Neurological Biopsy Procedure||F-MAIN": 1.0,
+    "Emergency Neurological Biopsy Procedure||F-NORTH": 1.0,
+    "Emergency Neurological Biopsy Procedure||F-COAST": 1.0,
+    "Emergency Oncology Imaging Interpretation||F-MAIN": 1.0,
+    "Emergency Oncology Imaging Interpretation||F-NORTH": 1.2,
+    "Emergency Oncology Imaging Interpretation||F-COAST": 0.9,
+    "Emergency Pulmonary Radiotherapy Fraction||F-MAIN": 1.0,
+    "Emergency Pulmonary Radiotherapy Fraction||F-NORTH": 1.08,
+    "Emergency Pulmonary Radiotherapy Fraction||F-COAST": 0.9,
+    "Emergency Urologic Home Visit||F-MAIN": 1.0,
+    "Emergency Urologic Home Visit||F-NORTH": 1.0,
+    "Emergency Urologic Home Visit||F-COAST": 1.0,
+    "Extended Dermatologic Transport Service||F-MAIN": 1.0,
+    "Extended Dermatologic Transport Service||F-NORTH": 1.2,
+    "Extended Dermatologic Transport Service||F-COAST": 1.05,
+    "Extended Endocrine Theatre Time||F-MAIN": 1.0,
+    "Extended Endocrine Theatre Time||F-NORTH": 1.2,
+    "Extended Endocrine Theatre Time||F-COAST": 0.92,
+    "Extended Neurological Consultation||F-MAIN": 1.0,
+    "Extended Neurological Consultation||F-NORTH": 1.2,
+    "Extended Neurological Consultation||F-COAST": 1.05,
+    "Extended Ophthalmic Transport Service||F-MAIN": 1.0,
+    "Extended Ophthalmic Transport Service||F-NORTH": 1.1,
+    "Extended Ophthalmic Transport Service||F-COAST": 0.9,
+    "Extended Psychiatric Endoscopic Procedure||F-MAIN": 1.0,
+    "Extended Psychiatric Endoscopic Procedure||F-NORTH": 1.1,
+    "Extended Psychiatric Endoscopic Procedure||F-COAST": 0.95,
+    "Extended Urologic Infusion Therapy||F-MAIN": 1.0,
+    "Extended Urologic Infusion Therapy||F-NORTH": 1.08,
+    "Extended Urologic Infusion Therapy||F-COAST": 0.95,
+    "Focused Endocrine Theatre Time||F-MAIN": 1.0,
+    "Focused Endocrine Theatre Time||F-NORTH": 1.0,
+    "Focused Endocrine Theatre Time||F-COAST": 1.0,
+    "Focused Neurological Radiotherapy Fraction||F-MAIN": 1.0,
+    "Focused Neurological Radiotherapy Fraction||F-NORTH": 1.0,
+    "Focused Neurological Radiotherapy Fraction||F-COAST": 1.0,
+    "Focused Urologic Nutritional Support||F-MAIN": 1.0,
+    "Focused Urologic Nutritional Support||F-NORTH": 1.2,
+    "Focused Urologic Nutritional Support||F-COAST": 0.9,
+    "Inpatient Dermatologic Nursing Observation||F-MAIN": 1.0,
+    "Inpatient Dermatologic Nursing Observation||F-NORTH": 1.1,
+    "Inpatient Dermatologic Nursing Observation||F-COAST": 0.9,
+    "Inpatient Immunologic Recovery Room Occupancy||F-MAIN": 1.0,
+    "Inpatient Immunologic Recovery Room Occupancy||F-NORTH": 1.1,
+    "Inpatient Immunologic Recovery Room Occupancy||F-COAST": 0.9,
+    "Inpatient Psychiatric Case Conference||F-MAIN": 1.0,
+    "Inpatient Psychiatric Case Conference||F-NORTH": 1.0,
+    "Inpatient Psychiatric Case Conference||F-COAST": 1.0,
+    "Inpatient Pulmonary Critical Care Occupancy||F-MAIN": 1.0,
+    "Inpatient Pulmonary Critical Care Occupancy||F-NORTH": 1.08,
+    "Inpatient Pulmonary Critical Care Occupancy||F-COAST": 0.9,
+    "Intensive Hepatic Case Conference||F-MAIN": 1.0,
+    "Intensive Hepatic Case Conference||F-NORTH": 1.15,
+    "Intensive Hepatic Case Conference||F-COAST": 0.92,
+    "Intensive Oncology Sterilisation Service||F-MAIN": 1.0,
+    "Intensive Oncology Sterilisation Service||F-NORTH": 1.08,
+    "Intensive Oncology Sterilisation Service||F-COAST": 0.95,
+    "Intermittent Orthopaedic Discharge Planning||F-MAIN": 1.0,
+    "Intermittent Orthopaedic Discharge Planning||F-NORTH": 1.15,
+    "Intermittent Orthopaedic Discharge Planning||F-COAST": 0.92,
+    "Intermittent Urologic Discharge Planning||F-MAIN": 1.0,
+    "Intermittent Urologic Discharge Planning||F-NORTH": 1.2,
+    "Intermittent Urologic Discharge Planning||F-COAST": 0.9,
+    "Intermittent Vascular Telemetry Monitoring||F-MAIN": 1.0,
+    "Intermittent Vascular Telemetry Monitoring||F-NORTH": 1.1,
+    "Intermittent Vascular Telemetry Monitoring||F-COAST": 0.9,
+    "Outpatient Dermatologic Home Visit||F-MAIN": 1.0,
+    "Outpatient Dermatologic Home Visit||F-NORTH": 1.08,
+    "Outpatient Dermatologic Home Visit||F-COAST": 0.9,
+    "Outpatient Haematology Laboratory Panel||F-MAIN": 1.0,
+    "Outpatient Haematology Laboratory Panel||F-NORTH": 1.08,
+    "Outpatient Haematology Laboratory Panel||F-COAST": 1.05,
+    "Outpatient Metabolic Physiotherapy Session||F-MAIN": 1.0,
+    "Outpatient Metabolic Physiotherapy Session||F-NORTH": 1.15,
+    "Outpatient Metabolic Physiotherapy Session||F-COAST": 1.05,
+    "Outpatient Neurological Recovery Room Occupancy||F-MAIN": 1.0,
+    "Outpatient Neurological Recovery Room Occupancy||F-NORTH": 1.1,
+    "Outpatient Neurological Recovery Room Occupancy||F-COAST": 0.9,
+    "Outpatient Psychiatric Discharge Planning||F-MAIN": 1.0,
+    "Outpatient Psychiatric Discharge Planning||F-NORTH": 1.2,
+    "Outpatient Psychiatric Discharge Planning||F-COAST": 0.9,
+    "Postoperative Musculoskeletal Imaging Interpretation||F-MAIN": 1.0,
+    "Postoperative Musculoskeletal Imaging Interpretation||F-NORTH": 1.2,
+    "Postoperative Musculoskeletal Imaging Interpretation||F-COAST": 1.05,
+    "Preoperative Endocrine Rehabilitation Programme||F-MAIN": 1.0,
+    "Preoperative Endocrine Rehabilitation Programme||F-NORTH": 1.1,
+    "Preoperative Endocrine Rehabilitation Programme||F-COAST": 1.05,
+    "Preoperative Gastrointestinal Nutritional Support||F-MAIN": 1.0,
+    "Preoperative Gastrointestinal Nutritional Support||F-NORTH": 1.1,
+    "Preoperative Gastrointestinal Nutritional Support||F-COAST": 0.95,
+    "Preoperative Immunologic Recovery Room Occupancy||F-MAIN": 1.0,
+    "Preoperative Immunologic Recovery Room Occupancy||F-NORTH": 1.1,
+    "Preoperative Immunologic Recovery Room Occupancy||F-COAST": 1.05,
+    "Preoperative Musculoskeletal Nutritional Support||F-MAIN": 1.0,
+    "Preoperative Musculoskeletal Nutritional Support||F-NORTH": 1.1,
+    "Preoperative Musculoskeletal Nutritional Support||F-COAST": 1.05,
+    "Preoperative Ophthalmic Transport Service||F-MAIN": 1.0,
+    "Preoperative Ophthalmic Transport Service||F-NORTH": 1.1,
+    "Preoperative Ophthalmic Transport Service||F-COAST": 1.05,
+    "Preoperative Paediatric Biopsy Procedure||F-MAIN": 1.0,
+    "Preoperative Paediatric Biopsy Procedure||F-NORTH": 1.0,
+    "Preoperative Paediatric Biopsy Procedure||F-COAST": 1.0,
+    "Routine Dermatologic Home Visit||F-MAIN": 1.0,
+    "Routine Dermatologic Home Visit||F-NORTH": 1.1,
+    "Routine Dermatologic Home Visit||F-COAST": 0.9,
+    "Routine Geriatric Telemetry Monitoring||F-MAIN": 1.0,
+    "Routine Geriatric Telemetry Monitoring||F-NORTH": 1.1,
+    "Routine Geriatric Telemetry Monitoring||F-COAST": 0.95,
+    "Routine Infectious Infusion Therapy||F-MAIN": 1.0,
+    "Routine Infectious Infusion Therapy||F-NORTH": 1.08,
+    "Routine Infectious Infusion Therapy||F-COAST": 0.95,
+    "Routine Neurological Biopsy Procedure||F-MAIN": 1.0,
+    "Routine Neurological Biopsy Procedure||F-NORTH": 1.08,
+    "Routine Neurological Biopsy Procedure||F-COAST": 0.95,
+    "Routine Psychiatric Physiotherapy Session||F-MAIN": 1.0,
+    "Routine Psychiatric Physiotherapy Session||F-NORTH": 1.1,
+    "Routine Psychiatric Physiotherapy Session||F-COAST": 0.92,
+    "Routine Psychiatric Telemetry Monitoring||F-MAIN": 1.0,
+    "Routine Psychiatric Telemetry Monitoring||F-NORTH": 1.0,
+    "Routine Psychiatric Telemetry Monitoring||F-COAST": 1.0,
+    "Routine Urologic Radiotherapy Fraction||F-MAIN": 1.0,
+    "Routine Urologic Radiotherapy Fraction||F-NORTH": 1.0,
+    "Routine Urologic Radiotherapy Fraction||F-COAST": 1.0,
+    "Routine Urologic Transport Service||F-MAIN": 1.0,
+    "Routine Urologic Transport Service||F-NORTH": 1.1,
+    "Routine Urologic Transport Service||F-COAST": 0.95,
+    "Specialist Dermatologic Nursing Observation||F-MAIN": 1.0,
+    "Specialist Dermatologic Nursing Observation||F-NORTH": 1.0,
+    "Specialist Dermatologic Nursing Observation||F-COAST": 1.0,
+    "Specialist Gastrointestinal Pharmaceutical Dispensing||F-MAIN": 1.0,
+    "Specialist Gastrointestinal Pharmaceutical Dispensing||F-NORTH": 1.1,
+    "Specialist Gastrointestinal Pharmaceutical Dispensing||F-COAST": 0.95,
+    "Specialist Metabolic Sterilisation Service||F-MAIN": 1.0,
+    "Specialist Metabolic Sterilisation Service||F-NORTH": 1.15,
+    "Specialist Metabolic Sterilisation Service||F-COAST": 0.95,
+    "Standard Infectious Ventilation Support||F-MAIN": 1.0,
+    "Standard Infectious Ventilation Support||F-NORTH": 1.0,
+    "Standard Infectious Ventilation Support||F-COAST": 1.0,
+    "Standard Paediatric Radiotherapy Fraction||F-MAIN": 1.0,
+    "Standard Paediatric Radiotherapy Fraction||F-NORTH": 1.1,
+    "Standard Paediatric Radiotherapy Fraction||F-COAST": 0.9,
+    "Standard Psychiatric Discharge Planning||F-MAIN": 1.0,
+    "Standard Psychiatric Discharge Planning||F-NORTH": 1.08,
+    "Standard Psychiatric Discharge Planning||F-COAST": 0.9,
+    "Supervised Immunologic Sterilisation Service||F-MAIN": 1.0,
+    "Supervised Immunologic Sterilisation Service||F-NORTH": 1.2,
+    "Supervised Immunologic Sterilisation Service||F-COAST": 0.92,
+    "Supervised Metabolic Discharge Planning||F-MAIN": 1.0,
+    "Supervised Metabolic Discharge Planning||F-NORTH": 1.08,
+    "Supervised Metabolic Discharge Planning||F-COAST": 0.95,
+    "Supervised Otolaryngologic Specimen Analysis||F-MAIN": 1.0,
+    "Supervised Otolaryngologic Specimen Analysis||F-NORTH": 1.15,
+    "Supervised Otolaryngologic Specimen Analysis||F-COAST": 0.95,
+    "Supervised Palliative Consultation||F-MAIN": 1.0,
+    "Supervised Palliative Consultation||F-NORTH": 1.15,
+    "Supervised Palliative Consultation||F-COAST": 0.9,
+    "Supervised Vascular Consultation||F-MAIN": 1.0,
+    "Supervised Vascular Consultation||F-NORTH": 1.0,
+    "Supervised Vascular Consultation||F-COAST": 1.0,
+    "Supervised Vascular Diagnostic Imaging||F-MAIN": 1.0,
+    "Supervised Vascular Diagnostic Imaging||F-NORTH": 1.0,
+    "Supervised Vascular Diagnostic Imaging||F-COAST": 1.0
+  },
+  "tier_multipliers": {
+    "Advanced Cardiac Ventilation Support||BRONZE": 1.0,
+    "Advanced Cardiac Ventilation Support||SILVER": 0.98,
+    "Advanced Cardiac Ventilation Support||GOLD": 0.92,
+    "Advanced Dermatologic Pharmaceutical Dispensing||BRONZE": 1.0,
+    "Advanced Dermatologic Pharmaceutical Dispensing||SILVER": 1.0,
+    "Advanced Dermatologic Pharmaceutical Dispensing||GOLD": 0.9,
+    "Ambulatory Hepatic Case Conference||BRONZE": 1.05,
+    "Ambulatory Hepatic Case Conference||SILVER": 1.0,
+    "Ambulatory Hepatic Case Conference||GOLD": 0.95,
+    "Ambulatory Metabolic Imaging Interpretation||BRONZE": 1.0,
+    "Ambulatory Metabolic Imaging Interpretation||SILVER": 1.0,
+    "Ambulatory Metabolic Imaging Interpretation||GOLD": 0.9,
+    "Ambulatory Oncology Imaging Interpretation||BRONZE": 1.0,
+    "Ambulatory Oncology Imaging Interpretation||SILVER": 0.98,
+    "Ambulatory Oncology Imaging Interpretation||GOLD": 0.9,
+    "Ambulatory Paediatric Isolation Room Occupancy||BRONZE": 1.05,
+    "Ambulatory Paediatric Isolation Room Occupancy||SILVER": 0.98,
+    "Ambulatory Paediatric Isolation Room Occupancy||GOLD": 0.95,
+    "Assisted Cardiac Ventilation Support||BRONZE": 1.0,
+    "Assisted Cardiac Ventilation Support||SILVER": 1.0,
+    "Assisted Cardiac Ventilation Support||GOLD": 0.92,
+    "Assisted Hepatic Physiotherapy Session||BRONZE": 1.0,
+    "Assisted Hepatic Physiotherapy Session||SILVER": 1.0,
+    "Assisted Hepatic Physiotherapy Session||GOLD": 0.92,
+    "Assisted Immunologic Sterilisation Service||BRONZE": 1.05,
+    "Assisted Immunologic Sterilisation Service||SILVER": 0.98,
+    "Assisted Immunologic Sterilisation Service||GOLD": 0.92,
+    "Assisted Metabolic Endoscopic Procedure||BRONZE": 1.05,
+    "Assisted Metabolic Endoscopic Procedure||SILVER": 1.0,
+    "Assisted Metabolic Endoscopic Procedure||GOLD": 0.95,
+    "Assisted Renal Imaging Interpretation||BRONZE": 1.05,
+    "Assisted Renal Imaging Interpretation||SILVER": 0.98,
+    "Assisted Renal Imaging Interpretation||GOLD": 0.95,
+    "Bedside Oncology Transfusion Service||BRONZE": 1.05,
+    "Bedside Oncology Transfusion Service||SILVER": 0.98,
+    "Bedside Oncology Transfusion Service||GOLD": 0.95,
+    "Bedside Paediatric Consultation||BRONZE": 1.0,
+    "Bedside Paediatric Consultation||SILVER": 1.0,
+    "Bedside Paediatric Consultation||GOLD": 0.9,
+    "Comprehensive Gastrointestinal Endoscopic Procedure||BRONZE": 1.0,
+    "Comprehensive Gastrointestinal Endoscopic Procedure||SILVER": 1.0,
+    "Comprehensive Gastrointestinal Endoscopic Procedure||GOLD": 1.0,
+    "Comprehensive Geriatric Wound Care||BRONZE": 1.05,
+    "Comprehensive Geriatric Wound Care||SILVER": 0.98,
+    "Comprehensive Geriatric Wound Care||GOLD": 0.9,
+    "Comprehensive Metabolic Ventilation Support||BRONZE": 1.0,
+    "Comprehensive Metabolic Ventilation Support||SILVER": 1.0,
+    "Comprehensive Metabolic Ventilation Support||GOLD": 1.0,
+    "Comprehensive Oncology Transfusion Service||BRONZE": 1.05,
+    "Comprehensive Oncology Transfusion Service||SILVER": 0.98,
+    "Comprehensive Oncology Transfusion Service||GOLD": 0.9,
+    "Comprehensive Ophthalmic Isolation Room Occupancy||BRONZE": 1.05,
+    "Comprehensive Ophthalmic Isolation Room Occupancy||SILVER": 0.98,
+    "Comprehensive Ophthalmic Isolation Room Occupancy||GOLD": 0.95,
+    "Comprehensive Palliative Consultation||BRONZE": 1.05,
+    "Comprehensive Palliative Consultation||SILVER": 1.0,
+    "Comprehensive Palliative Consultation||GOLD": 0.95,
+    "Continuous Immunologic Laboratory Panel||BRONZE": 1.0,
+    "Continuous Immunologic Laboratory Panel||SILVER": 1.0,
+    "Continuous Immunologic Laboratory Panel||GOLD": 1.0,
+    "Continuous Metabolic Endoscopic Procedure||BRONZE": 1.0,
+    "Continuous Metabolic Endoscopic Procedure||SILVER": 1.0,
+    "Continuous Metabolic Endoscopic Procedure||GOLD": 0.9,
+    "Continuous Otolaryngologic Transport Service||BRONZE": 1.05,
+    "Continuous Otolaryngologic Transport Service||SILVER": 0.98,
+    "Continuous Otolaryngologic Transport Service||GOLD": 0.9,
+    "Continuous Pulmonary Case Conference||BRONZE": 1.0,
+    "Continuous Pulmonary Case Conference||SILVER": 1.0,
+    "Continuous Pulmonary Case Conference||GOLD": 1.0,
+    "Elective Metabolic Pharmaceutical Dispensing||BRONZE": 1.05,
+    "Elective Metabolic Pharmaceutical Dispensing||SILVER": 1.0,
+    "Elective Metabolic Pharmaceutical Dispensing||GOLD": 0.92,
+    "Elective Ophthalmic Nutritional Support||BRONZE": 1.0,
+    "Elective Ophthalmic Nutritional Support||SILVER": 0.98,
+    "Elective Ophthalmic Nutritional Support||GOLD": 0.92,
+    "Elective Ophthalmic Recovery Room Occupancy||BRONZE": 1.05,
+    "Elective Ophthalmic Recovery Room Occupancy||SILVER": 1.0,
+    "Elective Ophthalmic Recovery Room Occupancy||GOLD": 0.95,
+    "Elective Pulmonary Radiotherapy Fraction||BRONZE": 1.0,
+    "Elective Pulmonary Radiotherapy Fraction||SILVER": 1.0,
+    "Elective Pulmonary Radiotherapy Fraction||GOLD": 1.0,
+    "Elective Vascular Diagnostic Imaging||BRONZE": 1.05,
+    "Elective Vascular Diagnostic Imaging||SILVER": 0.98,
+    "Elective Vascular Diagnostic Imaging||GOLD": 0.92,
+    "Emergency Gastrointestinal Endoscopic Procedure||BRONZE": 1.05,
+    "Emergency Gastrointestinal Endoscopic Procedure||SILVER": 1.0,
+    "Emergency Gastrointestinal Endoscopic Procedure||GOLD": 0.95,
+    "Emergency Metabolic Discharge Planning||BRONZE": 1.05,
+    "Emergency Metabolic Discharge Planning||SILVER": 0.98,
+    "Emergency Metabolic Discharge Planning||GOLD": 0.92,
+    "Emergency Neurological Biopsy Procedure||BRONZE": 1.0,
+    "Emergency Neurological Biopsy Procedure||SILVER": 1.0,
+    "Emergency Neurological Biopsy Procedure||GOLD": 1.0,
+    "Emergency Oncology Imaging Interpretation||BRONZE": 1.0,
+    "Emergency Oncology Imaging Interpretation||SILVER": 1.0,
+    "Emergency Oncology Imaging Interpretation||GOLD": 0.9,
+    "Emergency Pulmonary Radiotherapy Fraction||BRONZE": 1.0,
+    "Emergency Pulmonary Radiotherapy Fraction||SILVER": 0.98,
+    "Emergency Pulmonary Radiotherapy Fraction||GOLD": 0.92,
+    "Emergency Urologic Home Visit||BRONZE": 1.0,
+    "Emergency Urologic Home Visit||SILVER": 1.0,
+    "Emergency Urologic Home Visit||GOLD": 1.0,
+    "Extended Dermatologic Transport Service||BRONZE": 1.0,
+    "Extended Dermatologic Transport Service||SILVER": 0.98,
+    "Extended Dermatologic Transport Service||GOLD": 0.92,
+    "Extended Endocrine Theatre Time||BRONZE": 1.05,
+    "Extended Endocrine Theatre Time||SILVER": 0.98,
+    "Extended Endocrine Theatre Time||GOLD": 0.92,
+    "Extended Neurological Consultation||BRONZE": 1.05,
+    "Extended Neurological Consultation||SILVER": 0.98,
+    "Extended Neurological Consultation||GOLD": 0.92,
+    "Extended Ophthalmic Transport Service||BRONZE": 1.05,
+    "Extended Ophthalmic Transport Service||SILVER": 1.0,
+    "Extended Ophthalmic Transport Service||GOLD": 0.92,
+    "Extended Psychiatric Endoscopic Procedure||BRONZE": 1.05,
+    "Extended Psychiatric Endoscopic Procedure||SILVER": 1.0,
+    "Extended Psychiatric Endoscopic Procedure||GOLD": 0.9,
+    "Extended Urologic Infusion Therapy||BRONZE": 1.05,
+    "Extended Urologic Infusion Therapy||SILVER": 1.0,
+    "Extended Urologic Infusion Therapy||GOLD": 0.9,
+    "Focused Endocrine Theatre Time||BRONZE": 1.0,
+    "Focused Endocrine Theatre Time||SILVER": 1.0,
+    "Focused Endocrine Theatre Time||GOLD": 1.0,
+    "Focused Neurological Radiotherapy Fraction||BRONZE": 1.0,
+    "Focused Neurological Radiotherapy Fraction||SILVER": 1.0,
+    "Focused Neurological Radiotherapy Fraction||GOLD": 1.0,
+    "Focused Urologic Nutritional Support||BRONZE": 1.05,
+    "Focused Urologic Nutritional Support||SILVER": 1.0,
+    "Focused Urologic Nutritional Support||GOLD": 0.92,
+    "Inpatient Dermatologic Nursing Observation||BRONZE": 1.05,
+    "Inpatient Dermatologic Nursing Observation||SILVER": 1.0,
+    "Inpatient Dermatologic Nursing Observation||GOLD": 0.92,
+    "Inpatient Immunologic Recovery Room Occupancy||BRONZE": 1.05,
+    "Inpatient Immunologic Recovery Room Occupancy||SILVER": 1.0,
+    "Inpatient Immunologic Recovery Room Occupancy||GOLD": 0.9,
+    "Inpatient Psychiatric Case Conference||BRONZE": 1.0,
+    "Inpatient Psychiatric Case Conference||SILVER": 1.0,
+    "Inpatient Psychiatric Case Conference||GOLD": 1.0,
+    "Inpatient Pulmonary Critical Care Occupancy||BRONZE": 1.05,
+    "Inpatient Pulmonary Critical Care Occupancy||SILVER": 1.0,
+    "Inpatient Pulmonary Critical Care Occupancy||GOLD": 0.95,
+    "Intensive Hepatic Case Conference||BRONZE": 1.0,
+    "Intensive Hepatic Case Conference||SILVER": 1.0,
+    "Intensive Hepatic Case Conference||GOLD": 0.9,
+    "Intensive Oncology Sterilisation Service||BRONZE": 1.0,
+    "Intensive Oncology Sterilisation Service||SILVER": 0.98,
+    "Intensive Oncology Sterilisation Service||GOLD": 0.92,
+    "Intermittent Orthopaedic Discharge Planning||BRONZE": 1.0,
+    "Intermittent Orthopaedic Discharge Planning||SILVER": 1.0,
+    "Intermittent Orthopaedic Discharge Planning||GOLD": 0.92,
+    "Intermittent Urologic Discharge Planning||BRONZE": 1.0,
+    "Intermittent Urologic Discharge Planning||SILVER": 0.98,
+    "Intermittent Urologic Discharge Planning||GOLD": 0.9,
+    "Intermittent Vascular Telemetry Monitoring||BRONZE": 1.05,
+    "Intermittent Vascular Telemetry Monitoring||SILVER": 0.98,
+    "Intermittent Vascular Telemetry Monitoring||GOLD": 0.95,
+    "Outpatient Dermatologic Home Visit||BRONZE": 1.0,
+    "Outpatient Dermatologic Home Visit||SILVER": 1.0,
+    "Outpatient Dermatologic Home Visit||GOLD": 0.92,
+    "Outpatient Haematology Laboratory Panel||BRONZE": 1.05,
+    "Outpatient Haematology Laboratory Panel||SILVER": 0.98,
+    "Outpatient Haematology Laboratory Panel||GOLD": 0.92,
+    "Outpatient Metabolic Physiotherapy Session||BRONZE": 1.0,
+    "Outpatient Metabolic Physiotherapy Session||SILVER": 0.98,
+    "Outpatient Metabolic Physiotherapy Session||GOLD": 0.92,
+    "Outpatient Neurological Recovery Room Occupancy||BRONZE": 1.05,
+    "Outpatient Neurological Recovery Room Occupancy||SILVER": 1.0,
+    "Outpatient Neurological Recovery Room Occupancy||GOLD": 0.92,
+    "Outpatient Psychiatric Discharge Planning||BRONZE": 1.0,
+    "Outpatient Psychiatric Discharge Planning||SILVER": 1.0,
+    "Outpatient Psychiatric Discharge Planning||GOLD": 0.95,
+    "Postoperative Musculoskeletal Imaging Interpretation||BRONZE": 1.05,
+    "Postoperative Musculoskeletal Imaging Interpretation||SILVER": 0.98,
+    "Postoperative Musculoskeletal Imaging Interpretation||GOLD": 0.9,
+    "Preoperative Endocrine Rehabilitation Programme||BRONZE": 1.05,
+    "Preoperative Endocrine Rehabilitation Programme||SILVER": 1.0,
+    "Preoperative Endocrine Rehabilitation Programme||GOLD": 0.9,
+    "Preoperative Gastrointestinal Nutritional Support||BRONZE": 1.0,
+    "Preoperative Gastrointestinal Nutritional Support||SILVER": 0.98,
+    "Preoperative Gastrointestinal Nutritional Support||GOLD": 0.95,
+    "Preoperative Immunologic Recovery Room Occupancy||BRONZE": 1.05,
+    "Preoperative Immunologic Recovery Room Occupancy||SILVER": 1.0,
+    "Preoperative Immunologic Recovery Room Occupancy||GOLD": 0.95,
+    "Preoperative Musculoskeletal Nutritional Support||BRONZE": 1.05,
+    "Preoperative Musculoskeletal Nutritional Support||SILVER": 0.98,
+    "Preoperative Musculoskeletal Nutritional Support||GOLD": 0.9,
+    "Preoperative Ophthalmic Transport Service||BRONZE": 1.0,
+    "Preoperative Ophthalmic Transport Service||SILVER": 1.0,
+    "Preoperative Ophthalmic Transport Service||GOLD": 0.95,
+    "Preoperative Paediatric Biopsy Procedure||BRONZE": 1.0,
+    "Preoperative Paediatric Biopsy Procedure||SILVER": 1.0,
+    "Preoperative Paediatric Biopsy Procedure||GOLD": 1.0,
+    "Routine Dermatologic Home Visit||BRONZE": 1.05,
+    "Routine Dermatologic Home Visit||SILVER": 1.0,
+    "Routine Dermatologic Home Visit||GOLD": 0.9,
+    "Routine Geriatric Telemetry Monitoring||BRONZE": 1.05,
+    "Routine Geriatric Telemetry Monitoring||SILVER": 0.98,
+    "Routine Geriatric Telemetry Monitoring||GOLD": 0.9,
+    "Routine Infectious Infusion Therapy||BRONZE": 1.0,
+    "Routine Infectious Infusion Therapy||SILVER": 1.0,
+    "Routine Infectious Infusion Therapy||GOLD": 0.9,
+    "Routine Neurological Biopsy Procedure||BRONZE": 1.0,
+    "Routine Neurological Biopsy Procedure||SILVER": 1.0,
+    "Routine Neurological Biopsy Procedure||GOLD": 0.9,
+    "Routine Psychiatric Physiotherapy Session||BRONZE": 1.0,
+    "Routine Psychiatric Physiotherapy Session||SILVER": 1.0,
+    "Routine Psychiatric Physiotherapy Session||GOLD": 0.95,
+    "Routine Psychiatric Telemetry Monitoring||BRONZE": 1.0,
+    "Routine Psychiatric Telemetry Monitoring||SILVER": 1.0,
+    "Routine Psychiatric Telemetry Monitoring||GOLD": 1.0,
+    "Routine Urologic Radiotherapy Fraction||BRONZE": 1.0,
+    "Routine Urologic Radiotherapy Fraction||SILVER": 1.0,
+    "Routine Urologic Radiotherapy Fraction||GOLD": 1.0,
+    "Routine Urologic Transport Service||BRONZE": 1.05,
+    "Routine Urologic Transport Service||SILVER": 0.98,
+    "Routine Urologic Transport Service||GOLD": 0.92,
+    "Specialist Dermatologic Nursing Observation||BRONZE": 1.0,
+    "Specialist Dermatologic Nursing Observation||SILVER": 1.0,
+    "Specialist Dermatologic Nursing Observation||GOLD": 1.0,
+    "Specialist Gastrointestinal Pharmaceutical Dispensing||BRONZE": 1.05,
+    "Specialist Gastrointestinal Pharmaceutical Dispensing||SILVER": 1.0,
+    "Specialist Gastrointestinal Pharmaceutical Dispensing||GOLD": 0.95,
+    "Specialist Metabolic Sterilisation Service||BRONZE": 1.05,
+    "Specialist Metabolic Sterilisation Service||SILVER": 1.0,
+    "Specialist Metabolic Sterilisation Service||GOLD": 0.92,
+    "Standard Infectious Ventilation Support||BRONZE": 1.0,
+    "Standard Infectious Ventilation Support||SILVER": 1.0,
+    "Standard Infectious Ventilation Support||GOLD": 1.0,
+    "Standard Paediatric Radiotherapy Fraction||BRONZE": 1.05,
+    "Standard Paediatric Radiotherapy Fraction||SILVER": 0.98,
+    "Standard Paediatric Radiotherapy Fraction||GOLD": 0.9,
+    "Standard Psychiatric Discharge Planning||BRONZE": 1.05,
+    "Standard Psychiatric Discharge Planning||SILVER": 1.0,
+    "Standard Psychiatric Discharge Planning||GOLD": 0.92,
+    "Supervised Immunologic Sterilisation Service||BRONZE": 1.0,
+    "Supervised Immunologic Sterilisation Service||SILVER": 1.0,
+    "Supervised Immunologic Sterilisation Service||GOLD": 0.9,
+    "Supervised Metabolic Discharge Planning||BRONZE": 1.05,
+    "Supervised Metabolic Discharge Planning||SILVER": 1.0,
+    "Supervised Metabolic Discharge Planning||GOLD": 0.92,
+    "Supervised Otolaryngologic Specimen Analysis||BRONZE": 1.05,
+    "Supervised Otolaryngologic Specimen Analysis||SILVER": 1.0,
+    "Supervised Otolaryngologic Specimen Analysis||GOLD": 0.95,
+    "Supervised Palliative Consultation||BRONZE": 1.0,
+    "Supervised Palliative Consultation||SILVER": 0.98,
+    "Supervised Palliative Consultation||GOLD": 0.92,
+    "Supervised Vascular Consultation||BRONZE": 1.0,
+    "Supervised Vascular Consultation||SILVER": 1.0,
+    "Supervised Vascular Consultation||GOLD": 1.0,
+    "Supervised Vascular Diagnostic Imaging||BRONZE": 1.0,
+    "Supervised Vascular Diagnostic Imaging||SILVER": 1.0,
+    "Supervised Vascular Diagnostic Imaging||GOLD": 1.0
+  },
+  "unmapped_sections": [],
+  "parse_notes": []
+}

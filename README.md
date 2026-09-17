@@ -1,117 +1,288 @@
-# Invoice Audit Exercise
+# Insurance Invoice Auditing
 
-Meridian Health Assurance Group reimburses five hospitals under five separately
-negotiated service contracts. Each hospital submits invoices for the patients
-it has treated. Some of those invoices are wrong — a rate that does not match
-the contract, an adjustment applied when it was not due or omitted when it was,
-a quantity beyond a contractual limit, a service billed twice.
+A deterministic invoice-auditing pipeline for Meridian Health Assurance
+Group. The implementation interprets hospital contract terms into
+explicit structured rules, maps free-text invoice services to those
+rules, applies contractual pricing and validity checks, reconciles
+invoice-level findings, and produces the required submission output.
 
-Your job is to find the wrong ones.
+## Scope and Prioritization
 
-## What you have
+The assessment allows a limited 6--8 hour implementation window and
+explicitly favors strong coverage of fewer hospitals over thin coverage
+of all hospitals.
 
+-   **Hospital 1 (H1):** development and evaluation set because labels
+    are provided.
+-   **Hospitals 4 and 5 (H4/H5):** selected for the scored submission
+    after validating contract-rule extraction and service-matching
+    coverage.
+-   **Hospitals 2 and 3 (H2/H3):** intentionally deferred under the time
+    constraint.
+
+The final scored submission therefore contains H4 and H5 only.
+
+## Approach
+
+The implementation follows an **interpret → structure → execute**
+architecture.
+
+Contract interpretation is separated from runtime auditing. Contract
+terms are represented as explicit structured rules, while invoice
+auditing is performed deterministically in Python. The runtime pipeline
+does not call an LLM or external AI API.
+
+![Audit pipeline](readme_assets/audit_pipeline_diagram.svg)
+
+The main stages are:
+
+1.  Parse contract terms into structured rules.
+2.  Run invoice and line-item validity checks.
+3.  Resolve free-text service descriptions against canonical contract
+    services.
+4.  Apply deterministic contractual pricing rules.
+5.  Reconcile findings and expected invoice totals.
+6.  Assign confidence based on observable uncertainty.
+7.  Produce hospital-level predictions and the final submission.
+
+## Architecture Selection
+
+A runtime-LLM design was considered but not selected. Using an LLM
+directly during invoice auditing would make reproducibility,
+calibration, and debugging harder. Instead, AI assistance was used
+during development and interpretation, while the submitted execution
+path remains explicit and deterministic.
+
+![Architecture trade-off](readme_assets/architecture_tradeoff.svg)
+
+This separation also makes uncertain interpretation visible: weak
+service matches and unsupported mappings can remain unresolved rather
+than being silently converted into contractual facts.
+
+## Service Resolution
+
+Invoice descriptions are free text, while contracts define canonical
+service names. `service_matcher.py` resolves these using deterministic
+lexical evidence.
+
+The matcher:
+
+-   normalizes descriptions before comparison;
+-   uses conservative similarity and margin thresholds;
+-   supports explicit semantic aliases where required;
+-   does **not** use billed price as matching evidence;
+-   may use billed unit basis as a secondary tie-break when exactly one
+    plausible candidate is compatible;
+-   preserves ambiguous or unresolved matches instead of forcing a
+    service assignment.
+
+The final matcher thresholds are `MIN_SCORE = 0.60` and
+`MIN_MARGIN = 0.08`.
+
+## Pricing and Contract Rules
+
+`pricing_engine.py` applies structured contractual rules using `Decimal`
+arithmetic and half-up cent rounding.
+
+Supported rule families include:
+
+-   base service rates and unit bases;
+-   threshold premiums;
+-   non-business-day uplifts;
+-   cumulative volume discounts;
+-   daily caps;
+-   bundled-service rates;
+-   exclusion windows;
+-   facility multipliers;
+-   plan-tier multipliers;
+-   contract-term validation.
+
+Hospital-specific ordering and rounding behavior is encoded explicitly
+rather than inferred from billed totals.
+
+## Development, Regression, and Transfer
+
+Hospital 1 was used as the labeled development set. Errors were
+investigated by failure type rather than by hard-coding individual
+invoices. Changes were then protected with regression tests before
+transfer to H4/H5.
+
+![Development and transfer
+workflow](readme_assets/workflow_diagram_v2.svg)
+
+Two reconciliation cases required particular care:
+
+-   **Duplicate invoice IDs:** physical records retain separate
+    identity; the latest invoice-date record is used as the canonical
+    submitted record. Historical physical lines remain available where
+    cumulative pricing may depend on them.
+-   **Cross-invoice duplicates:** monetary remediation is applied only
+    when the offending duplicate occurrence can be identified
+    unambiguously. Ambiguous cases may still be flagged without
+    inventing an expected-total adjustment.
+
+These behaviors are documented assumptions informed by H1 development
+evidence and are not presented as universally established contract
+rules.
+
+## Hospital Prioritization
+
+  Hospital   Role                             Final status
+  ---------- -------------------------------- --------------
+  H1         Labeled development/evaluation   Implemented
+  H2         Unlabeled scored hospital        Deferred
+  H3         Unlabeled scored hospital        Deferred
+  H4         Unlabeled scored hospital        Submitted
+  H5         Unlabeled scored hospital        Submitted
+
+H4 and H5 were selected after checking contract parse completeness,
+supported rule families, and service-resolution coverage.
+
+## H1 Development Results
+
+The final reproducible H1 run covers **913 unique invoices**, including
+**58 labeled erroneous invoices**.
+
+  Metric                                Result
+  ---------------------------- ---------------
+  Flag precision                         1.000
+  Flag recall                            1.000
+  Mean category Jaccard                  0.746
+  Exact category-set match               0.603
+  Expected-total exact match             0.897
+  Expected-total MAE             6,316.6 cents
+
+Binary error detection is strong on the H1 development set, while the
+main remaining weakness is diagnostic specificity: some specific
+pricing-rule failures are detected through a more generic pricing
+category.
+
+These are **development-set results**, not held-out estimates of H4/H5
+accuracy.
+
+## Submitted Coverage
+
+The final `outputs/submission.csv` contains H4 and H5 only.
+
+  Hospital           Rows   Flagged
+  ----------- ----------- ---------
+  H4                  835        63
+  H5                1,050        76
+  **Total**     **1,885**   **139**
+
+No labels are provided for H4/H5, so these counts are coverage and
+prediction summaries rather than accuracy measurements.
+
+## Repository Structure
+
+``` text
+insurance_auditing/
+├── README.md
+├── requirements.txt
+├── data/
+├── outputs/
+│   ├── submission.csv
+│   ├── submission_H1.csv
+│   └── evaluation_report_h1.md
+├── prompts/
+│   └── prompt_log.md
+├── readme_assets/
+│   ├── audit_pipeline_diagram.svg
+│   ├── architecture_tradeoff.svg
+│   └── workflow_diagram_v2.svg
+└── src/
+    ├── run_pipeline.py
+    ├── contract_parser.py
+    ├── validity_checks.py
+    ├── service_matcher.py
+    ├── pricing_engine.py
+    ├── evaluate.py
+    ├── test_pricing_engine.py
+    └── test_pipeline.py
 ```
-contracts/hospital_1/ ... contracts/hospital_5/
-    The five contracts, as Markdown and as plain text. Each hospital's
-    contract is presented differently; one of them is split across several
-    documents. Read whichever format suits your tooling.
 
-invoices/hospital_N_invoices.csv
-    One row per invoice: invoice_id, hospital_id, contract_number,
-    invoice_date, patient_id, facility_code, plan_tier, admission_date,
-    discharge_date, invoice_total_cents.
+## Reproduction
 
-invoices/hospital_N_line_items.csv
-    One row per line item: line_id, invoice_id, line_no, service_date,
-    description, quantity, unit_basis_as_billed, unit_price_cents,
-    line_total_cents.
+From the repository root:
 
-invoices/hospital_N_invoices.jsonl
-    The same data, one JSON object per invoice, with the line items nested.
-    Use whichever shape you prefer; they carry identical information.
-
-labels/hospital_1_labels.csv
-    Ground truth for hospital 1 only — your development set.
-
-submission_template.csv
-    The format your predictions must take.
+``` bash
+pip install -r requirements.txt
+python src/run_pipeline.py
 ```
 
-All money is an integer number of cents. There are no floating-point amounts
-anywhere in the data, and there should be none in your answer.
+The pipeline:
 
-The line-item `description` is the hospital's own free-text billing
-description. It is not a contract term, it is not a code, and the same
-contracted service is described many different ways across the data.
-Establishing which contracted service a description refers to is part of the
-task.
+1.  generates H1 development predictions;
+2.  generates H4 and H5 predictions;
+3.  combines H4/H5 into `outputs/submission.csv`;
+4.  evaluates H1 against the supplied labels;
+5.  runs the pricing regression suite.
 
-## The task
+The complete discovered test suite can also be run with:
 
-For hospitals hospital_2, hospital_3, hospital_4, hospital_5, decide for each invoice whether it is erroneous, and
-submit your predictions in the format of `submission_template.csv`:
+``` bash
+python -m unittest discover -s src -p "test_*.py" -v
+```
 
-| column | meaning |
-|---|---|
-| `invoice_id` | the invoice you are making a claim about |
-| `flagged` | `1` if you believe the invoice is erroneous, `0` otherwise |
-| `error_category` | your own short label for what is wrong; free text |
-| `expected_total_cents` | what you believe the invoice *should* have totalled |
-| `billed_total_cents` | what it actually totalled |
-| `confidence` | your confidence in the row, between 0 and 1 |
+The final local validation passed **43/43 tests**. The full pipeline
+reproduced the H1 metrics above and generated exactly **1,885 H4/H5
+submission rows**.
 
-Submit a row for every invoice you have an opinion about. Rows for invoices you
-believe are correct are useful and are scored.
+## Key Modules
 
-Hospital 1 is labelled. Use it to develop and to calibrate; it is not scored.
+-   `run_pipeline.py` --- end-to-end orchestration and submission
+    generation.
+-   `contract_parser.py` --- extraction of supported contract rule
+    families.
+-   `validity_checks.py` --- invoice/line-item structural and validity
+    checks.
+-   `service_matcher.py` --- conservative free-text service resolution.
+-   `pricing_engine.py` --- deterministic contractual pricing and
+    violation detection.
+-   `evaluate.py` --- H1 development metrics and confidence calibration.
+-   `test_pricing_engine.py` --- pricing and contract-rule regression
+    tests.
+-   `test_pipeline.py` --- submission-level duplicate reconciliation
+    regression tests.
 
-## How this is assessed
+## Known Limitations
 
-**Complete coverage of all five contracts is not expected.** The exercise is
-deliberately larger than the time budget. Sequencing — deciding what to attempt
-first and what to leave — and reporting honestly on what you did not attempt
-are explicitly part of what is being evaluated. A submission covering two
-hospitals well, with a clear account of why those two and what would come next,
-is a stronger result than a thin pass over all four.
+-   H2 and H3 are outside the submitted scope.
+-   H1 labels were used for development, so H1 metrics should not be
+    interpreted as held-out performance.
+-   Duplicate-ID canonicalization uses the latest invoice date, an
+    H1-informed assumption transferred to H4/H5.
+-   Some cumulative pricing behavior can be uncertain when duplicate
+    physical records interact with historical thresholds.
+-   Free-text service resolution is intentionally conservative;
+    unresolved mappings reduce confidence rather than being forced.
+-   Category attribution remains less accurate than binary error
+    detection, particularly when a specific premium, discount, or bundle
+    failure can also appear as a generic unit-price mismatch.
+-   No labeled H4/H5 outcomes are available to measure final submission
+    accuracy.
 
-**A confidently wrong extraction is worse than a flagged uncertainty.** If you
-tell us a rate is 42.00 and it is not, that error propagates silently into
-every invoice touching that service. If you tell us you are unsure, a human
-reviews it and the cost is a few minutes. Scoring reflects this: your stated
-`confidence` is used, and calibration is measured. Say what you do not know.
+## If Additional Time Were Available
 
-## Time budget
+Further work would prioritize H2/H3 contract support, broader regression
+coverage for cumulative-history edge cases, improved attribution of
+specific pricing-rule failures, and validation of duplicate-record
+assumptions on additional labeled data.
 
-Six to eight hours, spread over one week. That is a **cap**, not a target. Do
-not exceed it. If you find yourself at the cap with work outstanding, stop and
-write down what you would have done next — that write-up is worth more to us
-than the extra hours.
+## AI Use Disclosure
 
-## AI assistance
+AI tools were used as development and documentation aids, with different
+models used for distinct stages:
 
-Using AI assistance is permitted and expected. It must be disclosed. Include
-your prompts as versioned files in the repository (see deliverables) so we can
-see how you worked, not just what you produced.
+-   **Claude Sonnet 5** --- initial problem framing, assessment
+    interpretation, scope prioritization, and development planning.
+-   **Claude Opus 5** --- code generation and implementation assistance
+    during development.
+-   **ChatGPT (GPT-5.6 Sol)** --- post-implementation technical review,
+    technical write-up and documentation, consolidation of the
+    development prompt history into the prompt log, and final
+    formatting.
 
-## Deliverables
-
-1. **A runnable repository.** We should be able to clone it, follow your README,
-   and reproduce your submission file. Pin your dependencies.
-2. **`submission.csv`** in the template format.
-3. **A short evaluation report** giving per-category performance on the
-   hospital 1 development set, and an error analysis grouped by *failure type*
-   — not a list of individual misses, but the three or four systematic ways
-   your approach goes wrong, with an example of each.
-4. **Your prompts, as versioned files** in the repository. If you iterated on a
-   prompt, we would like to see that it was iterated on.
-5. **A one-page decision log**: the assumptions you made, the ambiguities you
-   found and could not resolve, and what you decided to do about each. If you
-   read a clause two ways and had to pick one, that belongs here.
-
-## Ground rules
-
-- The data is synthetic. There are no real patients and no real hospitals.
-- Everything you need is in this package. There is nothing to look up
-  externally.
-- If something in a contract seems genuinely ambiguous, it may well be. Record
-  your reading and move on; do not spend the budget on it.
+The submitted auditing pipeline itself is deterministic Python. No
+external LLM or AI API is called during pipeline execution or required
+to reproduce the submitted results.
